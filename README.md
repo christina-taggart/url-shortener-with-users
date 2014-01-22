@@ -1,8 +1,8 @@
 # Sinatra Url Shortener With Users
 
-##Learning Competencies
+## Learning Competencies
 
-##Summary
+## Summary
 
  Let's integrate our URL shortener with our user authentication code.  This will let people save the URLs they've shortened and open up the possibility of "private" short URLs.
 
@@ -68,9 +68,9 @@ end
 
 This should display all the links that a particular user has created.  If I'm viewing my *own* profile page, show the number of clicks next to each link so I can see how awesome my link-sharing skills are.
 
-##Releases
-###Release 0
+## Releases
+### Release 0
 
-##Optimize Your Learning
+## Optimize Your Learning
 
-##Resources
+## Resources
