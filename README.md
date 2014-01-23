@@ -81,7 +81,7 @@ Your controller can now call `current_user` to get the currently authenticated
 user, if they exist.  This means we don't have to rely on user-submitted data
 to determine what user created a short URL.
 
-### Profile Page
+### Release 2: Profile Page
 
 Create a profile page for each user like so:
 
