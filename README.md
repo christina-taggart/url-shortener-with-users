@@ -4,7 +4,8 @@
 
 * Continued learning about ActiveRecord associations.
 * Learn how to integrate two pieces of code into one coherent application.
-* Explore a minimalistic authorization scheme to protect certain pages in a web application from being viewed by unauthorized persons.
+* Explore a minimalistic authorization scheme to protect certain pages in a web
+  application from being viewed by unauthorized persons.
 
 ## Summary
 
@@ -17,7 +18,6 @@ one step at a time.  If the problem seems unassailable, break it down into
 simpler parts you understand.  If you don't see how to break it down, flag down
 a staff member and ask: "How do I break this down into something that makes
 more sense for me?"
-
 
 ## Releases
 
@@ -96,4 +96,4 @@ can see how awesome my link-sharing skills are.
 
 ## Resources
 
-* _No resources provided, but be resourceful yourself!_
+_No resources are provided.  Be resourceful yourself!_
