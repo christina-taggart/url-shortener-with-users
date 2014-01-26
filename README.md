@@ -2,10 +2,9 @@
 
 ## Learning Competencies
 
-* Continued learning about ActiveRecord associations.
-* Learn how to integrate two pieces of code into one coherent application.
-* Explore a minimalistic authorization scheme to protect certain pages in a web
-  application from being viewed by unauthorized persons.
+* Use Active Record Associations
+* Integrate multiple code bases into one coherent application
+* Implement a user authorization scheme to limit unauthorized access to specific pages in a web application 
 
 ## Summary
 
@@ -93,6 +92,8 @@ end
 This should display all the links that a particular user has created.  If I'm
 viewing my *own* profile page, show the number of clicks next to each link so I
 can see how awesome my link-sharing skills are.
+
+<!-- ## Optimize Your Learning -->
 
 ## Resources
 
