@@ -1,12 +1,10 @@
 enable :sessions
 
-
 post '/log_in' do
   session[:logged_in] = User.authenticate(params[:email], params[:password])
   session[:user_id] = User.where(email: params[:email]).first.id if session[:logged_in]
   erb :index
 end
-
 
 post '/create_account' do
   User.create(params)
@@ -16,12 +14,11 @@ end
 get '/users/:id' do
   @user = User.find(params[:id])
   @urls = @user.urls
-
-  current_user != false && current_user.id == params[:id].to_i ? @click_access = true : @click_access = false
-
-
-
-
+  if current_user != false && current_user.id == params[:id].to_i
+    @click_access = true
+  else
+    @click_access = false
+  end
   erb :urls
 end
 

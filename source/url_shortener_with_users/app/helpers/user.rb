@@ -22,6 +22,4 @@ helpers do
       url
     end
   end
-
-  # Returns true if current_user exists, false otherwise
 end
