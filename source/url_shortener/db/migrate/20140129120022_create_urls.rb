@@ -4,6 +4,7 @@ class CreateUrls < ActiveRecord::Migration
       col.belongs_to :user
       col.string :long_url
       col.string :short_key
+      col.boolean :private
     end
   end
 end
