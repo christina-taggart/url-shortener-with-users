@@ -1,0 +1,59 @@
+body {
+  background-color: #398439;
+}
+
+.container {
+  font-family: 'Duru Sans', sans-serif;
+  margin: 100px auto;
+  padding: 0px 20px 20px 20px;
+  text-align: center;
+  width: 50%;
+}
+
+h1 {
+  color: white;
+  font-family: Artifika, sans-serif;
+  font-size: 2.5em;
+  text-shadow: 3px 3px #411817;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.submit-button {
+  background-color: #224f22;
+  border-radius: 10px;
+  color: white;
+  font-family: 'Duru Sans', sans-serif;
+  margin-left: 10px;
+  padding: 5px;
+}
+
+.submit-text {
+  background-color: #bccabc;
+  border-radius: 10px;
+  color: white;
+  font-family: 'Duru Sans', sans-serif;
+  padding: 5px;
+  width: 60%;
+}
+
+.error-message {
+  color: orange;
+}
+
+.short-url {
+  color: white;
+}
+
+#surly-form {
+  margin-top: 100px;
+  margin-bottom: 40px;
+  width: 100%;
+}

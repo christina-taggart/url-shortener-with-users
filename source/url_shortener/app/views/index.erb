@@ -1,0 +1,15 @@
+<div class="container">
+  <h1>Surly</h1>
+  <form id="surly-form" action="/urls" method="post">
+    <input class="submit-text" type="text" name="long_url" value="enter a url" onclick='javascript: this.value = ""'>
+    <button class="submit-button" type="submit">Shorten!</button>
+  </form>
+  <% if @error %>
+    <p class="error-message">Invalid URL</p>
+  <% elsif @short_key %>
+    <p class="short-url">Your shortened url:
+      <a href="http://localhost:9393/<%= @short_key %>"> http://localhost:9393/<%= @short_key %>
+      </a>
+    </p>
+  <% end %>
+</div>
