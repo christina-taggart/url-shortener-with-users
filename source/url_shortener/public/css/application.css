@@ -26,6 +26,18 @@ h1 {
   margin-top: 100px;
 }
 
+h4 {
+  color: white;
+}
+
+ul {
+  color: white;
+}
+
+li {
+  color: white;
+}
+
 a {
   color: white;
   text-decoration: none;
@@ -59,6 +71,14 @@ a:hover {
 
 .short-url {
   color: white;
+}
+
+.private {
+  color: orange;
+}
+
+.public {
+  color: blue;
 }
 
 #surly-form {
