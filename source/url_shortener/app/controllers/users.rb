@@ -25,8 +25,9 @@ end
 #   end
 # end
 
-# post '/awesome_users_club' do
-#   session.each { |key, value| session.delete(key) }
-#   p session
-#   redirect '/'
-# end
+post '/logout' do
+  @logged_in = false
+  session.each { |key, value| session.delete(key) }
+  p session
+  redirect '/'
+end

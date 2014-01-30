@@ -7,6 +7,9 @@
     </form>
   <% elsif @logged_in %>
     <p>Hello, <%= session[:name] %></p>
+    <form action="/logout" method="post">
+      <button class="submit-button" type="submit">Log out</button>
+    </form>
   <% end %>
   <h1>Surly</h1>
   <form id="surly-form" action="/urls" method="post">
