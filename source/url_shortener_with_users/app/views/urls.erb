@@ -1,0 +1,10 @@
+<ul>
+<% @urls.each do |url| %>
+  <li><%= url.long %></li>
+  <li><%= url.short %></li>
+  <% if @click_access %>
+  <%= url.clicks %>
+  <% end %>
+
+<% end %>
+</ul>
