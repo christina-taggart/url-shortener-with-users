@@ -1,4 +1,5 @@
 class User < ActiveRecord::Base
+  has_many :orders
   validates :email, uniqueness: true
   before_save :encrypt_password
 
