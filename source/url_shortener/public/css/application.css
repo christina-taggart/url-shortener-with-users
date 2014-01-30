@@ -10,6 +10,10 @@ body {
   width: 50%;
 }
 
+form {
+  color: white;
+}
+
 p {
   color: white;
 }

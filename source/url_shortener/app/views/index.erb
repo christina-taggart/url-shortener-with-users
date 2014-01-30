@@ -12,6 +12,11 @@
   <form id="surly-form" action="/urls" method="post">
     <input class="submit-text" type="text" name="long_url" value="enter a url" onclick='javascript: this.value = ""'>
     <button class="submit-button" type="submit">Shorten!</button>
+    <% if @logged_in %>
+    <br><br>
+    <input type="checkbox" name="private" value="true"> Private URL?
+    <input type="hidden" name="user_id" value="<%= session[:user_id] %>">
+    <% end %>
   </form>
   <% if @error %>
     <p class="error-message">Invalid URL</p>

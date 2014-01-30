@@ -24,6 +24,13 @@ end
 
 get '/:short_url' do # redirect to long url
   desired_url = Url.where(short_key: "#{params[:short_url]}").first
-  desired_url.update_column(:counter, (desired_url.counter + 1))
-  redirect "#{desired_url.long_url}"
+  if @logged_in && desired_url.private && desired_url.user_id == session[:user_id]
+    desired_url.update_column(:counter, (desired_url.counter + 1))
+    redirect "#{desired_url.long_url}"
+  elsif desired_url.private
+    redirect '/'
+  else
+    desired_url.update_column(:counter, (desired_url.counter + 1))
+    redirect "#{desired_url.long_url}"
+  end
 end

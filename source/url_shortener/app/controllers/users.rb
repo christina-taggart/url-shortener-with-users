@@ -9,23 +9,24 @@ post '/login' do
     params.delete(:password)
     session[:email] = params[:email]
     session[:name] = User.where(email: params[:email]).first.name
+    session[:user_id] = User.where(email: params[:email]).first.id
     redirect '/'
   else
     redirect '/'
   end
 end
 
-get '/awesome_users_club' do
-  p session
-  if session[:email]
-    erb :awesome_users_club
-  else
-    redirect '/'
-  end
-end
+# get '/awesome_users_club' do
+#   p session
+#   if session[:email]
+#     erb :awesome_users_club
+#   else
+#     redirect '/'
+#   end
+# end
 
-post '/awesome_users_club' do
-  session.each { |key, value| session.delete(key) }
-  p session
-  redirect '/'
-end
+# post '/awesome_users_club' do
+#   session.each { |key, value| session.delete(key) }
+#   p session
+#   redirect '/'
+# end
