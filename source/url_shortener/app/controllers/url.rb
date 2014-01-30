@@ -1,3 +1,10 @@
+before do
+  if session[:email]
+    @logged_in = true
+  end
+end
+
+
 get '/' do
   @error = params[:error]
   @short_key = params[:short_key]
@@ -7,8 +14,10 @@ end
 post '/urls' do #create new url
   new_url = Url.new(params)
   if new_url.save
+    p new_url
     redirect "/?short_key=#{new_url.short_key}"
   else
+    p new_url
     redirect '/?error=true'
   end
 end

@@ -9,7 +9,7 @@ post '/login' do
     params.delete(:password)
     session[:email] = params[:email]
     session[:name] = User.where(email: params[:email]).first.name
-    redirect '/awesome_users_club'
+    redirect '/'
   else
     redirect '/'
   end

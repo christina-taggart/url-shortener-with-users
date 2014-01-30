@@ -4,10 +4,14 @@ body {
 
 .container {
   font-family: 'Duru Sans', sans-serif;
-  margin: 100px auto;
+  margin: 0px auto;
   padding: 0px 20px 20px 20px;
   text-align: center;
   width: 50%;
+}
+
+p {
+  color: white;
 }
 
 h1 {
@@ -15,6 +19,7 @@ h1 {
   font-family: Artifika, sans-serif;
   font-size: 2.5em;
   text-shadow: 3px 3px #411817;
+  margin-top: 100px;
 }
 
 a {

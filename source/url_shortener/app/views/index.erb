@@ -1,4 +1,13 @@
 <div class="container">
+  <% if !@logged_in %>
+    <form action="/login" method="post">
+      <input type="text" name="email" value="email" onclick='javascript: this.value = ""'>
+      <input type="password" name="password" value="password" onclick='javascript: this.value = ""'>
+      <button class="submit-button" type="submit">Log in</button>
+    </form>
+  <% elsif @logged_in %>
+    <p>Hello, <%= session[:name] %></p>
+  <% end %>
   <h1>Surly</h1>
   <form id="surly-form" action="/urls" method="post">
     <input class="submit-text" type="text" name="long_url" value="enter a url" onclick='javascript: this.value = ""'>
